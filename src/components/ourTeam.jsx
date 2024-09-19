@@ -1,45 +1,91 @@
 import React from 'react';
 
-const OurTeam = () => {
-  // Team members list
-  const teamMembers = [
-    'Team Mentor - Dr. Rekha Kaushik',
-    'Gaurav Shukla',
-    'Aman Agrawal',
-    'Vaibhav Kishore',
-    'Gaurav Mishra',
-    'Anshul Patidar',
-    'Susmita Santosh Shambhukari',
-  ];
+// Team data
+const teamMembers = [
+  {
+    role: 'Team Mentor',
+    name: 'Dr. Rekha Kaushik',
+    email: 'rekhakaushik@iiitbhopal.ac.in',
+    phone: '9977162561',
+    areaOfResearch : 'Machine Learning, Wireless Network, Data Mining',
+  },
+  {
+    name: 'Gaurav Shukla',
+    scholarNo: '23U02042',
+    email: 'gauravshu2005@gmail.com',
+    phone: '7505752401',
+    department: 'CSE',
+    year: '2nd Year'
+  },
+  {
+    name: 'Aman Agrawal',
+    scholarNo: '22U01010',
+    email: 'aman.agraw.35@gmail.com',
+    phone: '6261446831',
+    department: 'ECE',
+    year: '3rd Year'
+  },
+  {
+    name: 'Vaibhav Kishore',
+    scholarNo: '23U02020',
+    email: 'vaibhavkishorevks@gmail.com',
+    phone: '7355050494',
+    department: 'CSE',
+    year: '2nd Year'
+  },
+  {
+    name: 'Gaurav Mishra',
+    scholarNo: '23U02040',
+    email: 'gaurav769786@gmail.com',
+    phone: '7697868173',
+    department: 'CSE',
+    year: '2nd Year'
+  },
+  {
+    name: 'Anshul Patidar',
+    scholarNo: '23U02043',
+    email: 'anshulpatidar45@gmail.com',
+    phone: '8103941559',
+    department: 'CSE',
+    year: '2nd Year'
+  },
+  {
+    name: 'Susmita Santosh Shambhukari',
+    scholarNo: '24U010067',
+    email: 'susmita.shambhukari@gmail.com',
+    phone: '7842802555',
+    department: 'ECE',
+    year: '1st Year'
+  }
+];
 
+const OurTeam = () => {
   return (
-    <section className="pt-6 pb-10 rounded-3xl my-4 mx-2 bg-black border-gray-700">
-      {/* Content container */}
-      <div className="relative max-w-screen-xl mx-auto px-8 py-10 text-gray-300">
-        {/* Main Heading */}
-        <div className="text-center">
-          <h2 className="text-3xl font-medium leading-tight">Our Team</h2>
+    <section className="pt-10 pb-16 mt-4 bg-black text-white rounded-3xl mb-1 border-white border-8 ">
+      <div className="max-w-screen-xl mx-auto px-4">
+        <h2 className="text-center text-6xl font-bold mb-12">Our Team</h2>
+
+        <div className="flex justify-center mb-12">
+          <div className="bg-gray-800 p-2 rounded-lg shadow-lg md:max-w-2xl sm:max-w-md max-w-sm text-left ">
+            <pre className="bg-gray-800 p-2  rounded text-sm overflow-x-auto ">
+              {JSON.stringify(teamMembers[0], null, 2)}
+            </pre>
+          </div>
         </div>
 
-        {/* Team Members List */}
-        <div className="mt-8 grid grid-cols-1 gap-4 text-center">
-          {/* First member - Centered */}
-          <div className="bg-gray-800 bg-opacity-70 rounded-md p-4 col-span-1">
-            <p className="text-lg font-light">{teamMembers[0]}</p>
-          </div>
-
-          {/* Other members */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {teamMembers.slice(1).map((member, index) => (
-              <div key={index} className="bg-gray-800 bg-opacity-70 rounded-md p-4">
-                <p className="text-lg font-light">{member}</p>
-              </div>
-            ))}
-          </div>
+        {/* Team Members Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {teamMembers.slice(1).map((member, index) => (
+            <div key={index} className="bg-gray-800 p-2 rounded-lg shadow-lg text-left">
+              <pre className="bg-gray-800  p-2 rounded  text-xs xl:text-sm overflow-x-auto" >
+                {JSON.stringify(member, null, 2)}
+              </pre>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default OurTeam;

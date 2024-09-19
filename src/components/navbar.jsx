@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <header className="bg-black text-white flex justify-between items-center px-5 py-2 border-8 border-white rounded-3xl">
+    <header className="bg-black  text-white flex justify-between items-center px-5 py-2 border-8 border-white rounded-3xl">
       <div className="text-3xl font-bold">The PathFinders</div>
       <div className="flex text-center items-center justify-center flex-1">
         <div className="text-3xl font-bold">SMART TRAFFIC MANAGEMENT</div>

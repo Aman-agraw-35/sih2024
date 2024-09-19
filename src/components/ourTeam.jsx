@@ -7,7 +7,7 @@ const teamMembers = [
     name: 'Dr. Rekha Kaushik',
     email: 'rekhakaushik@iiitbhopal.ac.in',
     phone: '9977162561',
-    areaOfResearch : 'Machine Learning, Wireless Network, Data Mining',
+    areaOfResearch: 'Machine Learning, Wireless Network, Data Mining',
   },
   {
     name: 'Gaurav Shukla',
@@ -15,7 +15,7 @@ const teamMembers = [
     email: 'gauravshu2005@gmail.com',
     phone: '7505752401',
     department: 'CSE',
-    year: '2nd Year'
+    year: '2nd Year',
   },
   {
     name: 'Aman Agrawal',
@@ -23,7 +23,7 @@ const teamMembers = [
     email: 'aman.agraw.35@gmail.com',
     phone: '6261446831',
     department: 'ECE',
-    year: '3rd Year'
+    year: '3rd Year',
   },
   {
     name: 'Vaibhav Kishore',
@@ -31,7 +31,7 @@ const teamMembers = [
     email: 'vaibhavkishorevks@gmail.com',
     phone: '7355050494',
     department: 'CSE',
-    year: '2nd Year'
+    year: '2nd Year',
   },
   {
     name: 'Gaurav Mishra',
@@ -39,7 +39,7 @@ const teamMembers = [
     email: 'gaurav769786@gmail.com',
     phone: '7697868173',
     department: 'CSE',
-    year: '2nd Year'
+    year: '2nd Year',
   },
   {
     name: 'Anshul Patidar',
@@ -47,7 +47,7 @@ const teamMembers = [
     email: 'anshulpatidar45@gmail.com',
     phone: '8103941559',
     department: 'CSE',
-    year: '2nd Year'
+    year: '2nd Year',
   },
   {
     name: 'Susmita Santosh Shambhukari',
@@ -55,37 +55,43 @@ const teamMembers = [
     email: 'susmita.shambhukari@gmail.com',
     phone: '7842802555',
     department: 'ECE',
-    year: '1st Year'
-  }
+    year: '1st Year',
+  },
 ];
 
 const OurTeam = () => {
   return (
-    <section className="pt-10 pb-16 mt-4 bg-black text-white rounded-3xl mb-1 border-white border-8 ">
+    <section className="pt-10 pb-16 mt-4 bg-black text-white rounded-3xl mb-1 border-white border-8">
       <div className="max-w-screen-xl mx-auto px-4">
         <h2 className="text-center text-6xl font-bold mb-12">Our Team</h2>
 
+        {/* Team Mentor Section */}
         <div className="flex justify-center mb-12">
-          <div className="bg-gray-800 p-2 rounded-lg shadow-lg md:max-w-2xl sm:max-w-md max-w-sm text-left ">
-            <pre className="bg-gray-800 p-2  rounded text-sm overflow-x-auto ">
-              {JSON.stringify(teamMembers[0], null, 2)}
-            </pre>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg md:max-w-2xl sm:max-w-md max-w-sm text-left">
+            <h3 className="text-2xl font-bold mb-4">{teamMembers[0].role}</h3>
+            <p><strong>Name:</strong> {teamMembers[0].name}</p>
+            <p><strong>Email:</strong> {teamMembers[0].email}</p>
+            <p><strong>Phone:</strong> {teamMembers[0].phone}</p>
+            <p><strong>Area of Research:</strong> {teamMembers[0].areaOfResearch}</p>
           </div>
         </div>
 
         {/* Team Members Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {teamMembers.slice(1).map((member, index) => (
-            <div key={index} className="bg-gray-800 p-2 rounded-lg shadow-lg text-left">
-              <pre className="bg-gray-800  p-2 rounded  text-xs xl:text-sm overflow-x-auto" >
-                {JSON.stringify(member, null, 2)}
-              </pre>
+            <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg text-left">
+              <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+              <p><strong>Scholar No:</strong> {member.scholarNo}</p>
+              <p><strong>Email:</strong> {member.email}</p>
+              <p><strong>Phone:</strong> {member.phone}</p>
+              <p><strong>Department:</strong> {member.department}</p>
+              <p><strong>Year:</strong> {member.year}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default OurTeam;

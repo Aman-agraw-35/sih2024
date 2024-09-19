@@ -10,10 +10,10 @@ const Vid = () => {
       <div className="border-2 h-[99%] border-black rounded-3xl overflow-hidden">
       <video
         ref={videoRef}
-        className="rounded-2xl h-[100%] w-full object-fill"
+        className="rounded-2xl h-[100%] w-full object-contain"
         controls // Enabling default video controls
       >
-        <source src="c.mp4" type="video/mp4" muted={false} />
+        <source src="apnr.mp4" type="video/mp4" muted={false} />
         Your browser does not support the video tag.
       </video>
       </div>

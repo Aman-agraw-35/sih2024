@@ -3,7 +3,7 @@ import Heading from "./heading";
 import Description from "./description";
 import Link from "./link";
 import Vid from "./vid";
-import Imagge from "../featurePage/imagge";
+import Imagge from "./imagge";
 const App = () => {
   return (
 

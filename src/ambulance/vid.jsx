@@ -13,7 +13,7 @@ const Vid = () => {
         className="rounded-2xl h-[100%] w-full object-fill"
         controls // Enabling default video controls
       >
-        <source src="c.mp4" type="video/mp4" muted={false} />
+        <source src="ambulance.mp4" type="video/mp4" muted={false} />
         Your browser does not support the video tag.
       </video>
       </div>

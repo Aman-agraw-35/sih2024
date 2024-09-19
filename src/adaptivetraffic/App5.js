@@ -1,7 +1,6 @@
 import React from "react";
 import Heading from "./heading";
 import Description from "./description";
-import Imagge from "./imagge";
 import Vid from "./vid";
 const App = () => {
   return (
@@ -11,7 +10,6 @@ const App = () => {
        <Heading/>
        <Description/>
        <Vid/>
-       <Imagge/>
        </div>
     </div>
   );

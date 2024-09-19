@@ -2,7 +2,6 @@ import React from "react";
 import Heading from "./heading";
 import Description from "./description";
 import Vid from "./vid";
-import Imagge from "./imagge";
 const App = () => {
   return (
 
@@ -11,7 +10,6 @@ const App = () => {
        <Heading/>
        <Description/>
        <Vid/>
-       <Imagge/>
        </div>
     </div>
   );

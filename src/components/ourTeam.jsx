@@ -63,7 +63,7 @@ const OurTeam = () => {
   return (
     <section className="pt-10 pb-16 mt-4 bg-black text-white rounded-3xl mb-1 border-white border-8">
       <div className="max-w-screen-xl mx-auto px-4">
-        <h2 className="text-center text-6xl font-bold mb-12">Our Team</h2>
+        <h2 className="text-center md:text-6xl sm:text-3xl text-2xl font-bold mb-12">Our Team</h2>
 
         {/* Team Mentor Section */}
         <div className="flex justify-center mb-12">

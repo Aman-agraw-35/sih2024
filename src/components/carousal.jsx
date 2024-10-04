@@ -71,7 +71,7 @@ const Carousal = () => {
       <div className="border-2 border-black rounded-3xl overflow-hidden">
         <div
           ref={containerRef}
-          className="relative rounded-2xl h-[90vh] flex transition-transform duration-1000 ease-in-out"
+          className="relative rounded-2xl lg:h-[90vh] md:h-[80vh] h-auto  flex transition-transform duration-1000 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}

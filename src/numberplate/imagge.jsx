@@ -6,7 +6,7 @@ const Imagge = () => {
 
   return (
     <section className="relative rounded-3xl border-8  border-white">
-      <div className="relative rounded-3xl h-[90vh] bg-fill bg-center">
+      <div className="relative rounded-3xl  lg:h-[90vh] h-auto bg-fill bg-center">
         <img
           className="rounded-2xl h-full w-full bg-fill"
           src="num.jpeg"
